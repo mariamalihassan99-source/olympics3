@@ -1,13 +1,15 @@
 // imports
-const connectToDB = require('./config/db.js')
-const express = require("express") //importing express package
+import connectToDB from './config/db.js'
+import express from "express" //importing express package
 const app = express() // creates a express application
-const dotenv = require("dotenv").config() //this allows me to use my .env values in this file
-const morgan = require('morgan')
-const cors = require('cors')
+import dotenv from "dotenv"
+dotenv.config() //this allows me to use my .env values in this file
+import morgan from 'morgan'
+import cors from 'cors'
+
 
 // Routes Import
-const zaidRoutes = require('./routes/zaid.routes.js')
+import zaidRoutes from './routes/zaid.routes.js'
 
 
 // Middleware

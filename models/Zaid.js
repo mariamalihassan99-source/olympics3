@@ -1,11 +1,11 @@
 import mongoose from 'mongoose'
 
 
-
 // Schema
 const zaidSchema = new mongoose.Schema({
     name:{
         type: String
+        
     },
     zaidImage:{
         type: String
